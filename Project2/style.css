@@ -73,3 +73,20 @@ aside {
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 }
+
+li:last-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+/* ! even - це парні числа, odd - непарні числа child elevents */
+li:nth-child(2) {
+	/* color: red; */
+}
+
+article p:first-child {
+
+}
