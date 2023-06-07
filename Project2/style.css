@@ -83,10 +83,10 @@ li:last-child {
 }
 
 /* ! even - це парні числа, odd - непарні числа child elevents */
-li:nth-child(2) {
-	/* color: red; */
-}
+/* li:nth-child(2) {
+	color: red;
+} */
 
-article p:first-child {
-
-}
+/* article p:first-child {
+	color: red;``````
+} */
