@@ -1,6 +1,8 @@
-h1, h2, h3, h4, p, li {
+body {
 	font-family: sans-serif;
+	color: #444;
 }
+
 
 h1, h2, h3 {
 	color: #1098ad;
@@ -82,11 +84,37 @@ li:last-child {
 	font-style: italic;
 }
 
-/* ! even - це парні числа, odd - непарні числа child elevents */
-/* li:nth-child(2) {
+/* ! even - це парні числа, odd - непарні числа child elevents
+li:nth-child(2) {
+	color: red;
+}
+! Misconception: this won't work!
+article p:first-child {
 	color: red;
 } */
 
-/* article p:first-child {
-	color: red;``````
-} */
+/* Styling  links */
+a:link {
+	color:#1098ad;
+	text-decoration: none;
+}
+a:visited {
+	color: #1098ad
+}
+
+a:hover {
+	color:orangered;
+	font-weight: bold;
+	text-decoration: underline wavy orangered;
+}
+
+a:active {
+	background-color: black;
+	font-style: italic;
+}
+
+/* LVHA */
+
+/* * Highest priority for declaration css 1. id #(name) 2. class .(name) 3. Element selector (p, div, li etc.) 4. Multiplied selector (when most 1 selector in declaration). */
+
+/* * And we will add !important for declaration and it will be used rules for highest priority for this declaration. */
