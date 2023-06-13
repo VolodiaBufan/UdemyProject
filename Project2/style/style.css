@@ -1,7 +1,8 @@
-/* * This way is  add rules of each element 
+/* * This way is  add rules of each element */
 * {
- border-top: solid #1090ad 20px;
-} */
+	padding: 0;
+	margin: 0;
+}
 
 
 body {
@@ -9,42 +10,78 @@ body {
 	color: #444;
 }
 
-
-h1, h2, h3 {
-	color: #1098ad;
+.main-header {
+	background-color: #f7f7f7;
+	/* *First top and bottom side and after left and ride side */
+	padding: 20px 40px;
+	/* * And other way to write padding it's side to side */
+	/* * padding: 20px 40px 20px 40px */
+	/* * first side is the top and next side to clockwise ( top -> right -> bottom -> left) */
+	margin-bottom: 60px;
 }
 
-p, li, h4 {
-	color: #444;
+.post-header {
+	margin: bottom 40px;
+}
+
+aside {
+	background-color: #f7f7f7;
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	/* padding-left: 50px;
+	padding-bottom: 50px; */
+	padding: 50px 10px;
+}
+
+h1,
+h2,
+h3 {
+	color: #1098ad;
 }
 
 h1 {
 	font-size: 26px;
 	text-transform: uppercase;
 	font-style: italic;
+	color: #1098ad;
 }
 
 h2 {
 	font-size: 40px;
+	margin-bottom: 30px;
 }
 
 h3 {
 	font-size: 30px;
+	margin-bottom: 30px;
 }
 
 h4 {
 	font-size: 20px;
 	text-transform: uppercase;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 p {
 	font-size: 22px;
 	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+ul,
+ol {
+	margin-left: 50px;
+	margin-bottom: 20px;
 }
 
 li {
 	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+li:last-child {
+	margin-bottom: 0;
 }
 
 /* footer p {
@@ -55,14 +92,15 @@ article header p {
 	font-style: italic;
 } */
 
-#author {
+.author {
 	font-size: 18px;
 	font-style: italic;
 }
 
-#copyright {
+.copyright {
 	font-size: 16px;
 }
+
 .related-author {
 	font-size: 19px;
 	font-weight: bold;
@@ -72,16 +110,6 @@ article header p {
 	list-style: none;
 }
 
-.main-header {
-	background-color: #f7f7f7;
-}
-
-aside {
-	background-color: #f7f7f7;
-	border-top: 5px solid #1098ad;
-	border-bottom: 5px solid #1098ad;
-}
-
 li:last-child {
 	font-weight: bold;
 }
@@ -90,26 +118,27 @@ li:last-child {
 	font-style: italic;
 }
 
-/* ! even - це парні числа, odd - непарні числа child elevents
+/* * even - це парні числа, odd - непарні числа child elevents
 li:nth-child(2) {
 	color: red;
 }
-! Misconception: this won't work!
+* Misconception: this won't work!
 article p:first-child {
 	color: red;
 } */
 
 /* Styling  links */
 a:link {
-	color:#1098ad;
+	color: #1098ad;
 	text-decoration: none;
 }
+
 a:visited {
 	color: #1098ad
 }
 
 a:hover {
-	color:orangered;
+	color: orangered;
 	font-weight: bold;
 	text-decoration: underline wavy orangered;
 }
