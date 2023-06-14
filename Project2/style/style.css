@@ -10,6 +10,11 @@ body {
 	color: #444;
 }
 
+.container {
+	width: 700px;
+	margin: 0 auto
+}
+
 .main-header {
 	background-color: #f7f7f7;
 	/* *First top and bottom side and after left and ride side */
