@@ -40,6 +40,14 @@ aside {
 	width: 500px;
 }
 
+nav a:link {
+	margin: 10px 30px
+}
+
+nav a:link:last-child {
+	margin-right: 0;
+}
+
 h1,
 h2,
 h3 {
