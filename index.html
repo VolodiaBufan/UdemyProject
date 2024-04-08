@@ -5,12 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		  href="style.css">
 	<title>The Basic Language of the Web: HTML</title>
 </head>
 
 <body>
 
-	<header>
+	<header class="main-header">
 		<h1>📘 The Code Magazine</h1>
 		<nav>
 			<a href="/Blog.html">Blog</a>
@@ -30,7 +32,7 @@
 				 width="50px"
 				 height="50px">
 
-			<p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+			<p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
 			<img src="/img/post-img.jpg"
 				 alt="HTML code in the screen"
@@ -58,14 +60,13 @@
 			<li>The opening tag</li>
 			<li>The closing tag</li>
 			<li>The actual element</li>
-			<li>You can learn more at the MDN Web Docs.</li>
 		</ol>
 		<p>You can learn more at the <a href="https://developer.mozilla.org/en-US/"
 			   target="_blank">MDN Web Docs</a>.</p>
 		<h3>Why should you learn HTML?</h3>
 		<p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
 		<ul>
-			<li>To be able to use the fundamental web dev language</li>
+			<li class="first-li">To be able to use the fundamental web dev language</li>
 			<li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
 			<li>To build web applications</li>
 			<li>To impress friends</li>
@@ -75,15 +76,15 @@
 	</article>
 
 	<aside>
-		<h3>Related posts</h3>
-		<ul>
+		<h4>Related posts</h4>
+		<ul class="related">
 			<li>
 				<img src="/img/related-1.jpg"
 					 alt="Man coding"
 					 width="75"
 					 height="75">
 				<a href="#">How to Learn Web Development</a>
-				<p>By Jonas Schmedtmann</p>
+				<p class="related-author">By Jonas Schmedtmann</p>
 			</li>
 			<li>
 				<img src="/img/related-2.jpg"
@@ -91,7 +92,7 @@
 					 width="75"
 					 height="75">
 				<a href="#">The Unknown Powers of CSS</a>
-				<p>By Jim Dillon</p>
+				<p class="related-author">By Jim Dillon</p>
 			</li>
 			<li>
 				<img src="/img/related-3.jpg"
@@ -99,13 +100,13 @@
 					 width="75"
 					 height="75">
 				<a href="#">Whe JavaScript is Awesome</a>
-				<p>By Matilda</p>
+				<p class="related-author">By Matilda</p>
 			</li>
 		</ul>
 	</aside>
 
 	<footer>
-		<p>Copyright &copy; 2027 by The Code Magazine.</p>
+		<p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
 	</footer>
 
 </body>
