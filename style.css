@@ -89,9 +89,52 @@ li:last-child {
 }
 
 li:nth-child(2) {
+	color: red;
+}
+
+/*  !Missconception: this won't work!
+article p:first-child {
+	color:red;
+} */
+
+/* *Styling link */
+a:link {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:visited {
+	/* color:#444; bad practice use different color for link pseudo class, but in good practice use the same color as on the link pseudo class*/
+	color: #1098ad;
+}
+
+a:hover {
+	color:orangered;
+	font-weight: bold;
+	text-decoration: underline dotted orangered;
+}
+
+a:active {
+	background-color: black;
+	font-style: italic;
+}
+
+/* *LVHA */
+
+/* *Resiolving congflicts */
+
+/* #copyright {
 	color:red;
 }
 
-article p:first-child {
-	color:red;
+.copyright {
+	color: blue;
 }
+
+.text {
+	color: yellow;
+}
+
+footer p {
+	color: green;
+} */
