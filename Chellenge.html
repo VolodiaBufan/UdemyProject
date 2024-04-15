@@ -9,26 +9,86 @@
 </head>
 
 <body>
+	<style>
+		article {
+			border: solid 5px #000;
+			font-family: sans-serif;
+			font-weight: 500;
+			line-height: 1.5;
+		}
+
+
+		.product-header {
+			text-align: center;
+			font-size: 22px;
+			text-transform: uppercase;
+			background-color: #f7f7f7;
+		}
+
+		.product-price {
+			font-size: 22px;
+			font-weight: bold;
+		}
+
+		.product-shipping {
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #999;
+		}
+
+		.product-more-information:link, .product-more-information:visited {
+			color: #000;
+		}
+
+		.product-more-information:hover, .product-more-information:active {
+			text-decoration: none;
+		}
+
+		.product-title {
+			text-transform: uppercase;
+
+		}
+
+		.product-list {
+			list-style: square;
+			font-size: 16px;
+		}
+
+		button {
+			border: none;
+			background-color: #000;
+			color: #fff;
+			font-size: 22px;
+			text-transform: uppercase;
+		}
+
+		button:hover {
+			background-color: #fff;
+			color: #000;
+		}
+	</style>
+
 
 	<article>
-		<h2>Converse Chunk Taylor All Star Low Top</h2>
+		<h2 class="product-header">Converse Chunk Taylor All Star Low Top</h2>
 
 		<img src="/img/challenges.jpg"
 			 alt="Converse All Star"
 			 width="250"
 			 height="250">
 
-		<p><strong>$65.00</strong></p>
+		<p class="product-price"><strong>$65.00</strong></p>
 
-		<p>Free shipping</p>
+		<p class="product-shipping">Free shipping</p>
 
 		<p>Ready to dress up, these classic canvas Chucks are an everyday wardrobe staple.</p>
 
-		<a href="#">More information &rarr;;</a>
+		<a href="#"
+		   class="product-more-information">More information &rarr;</a>
 
-		<h3>Product details</h3>
+		<h3 class="product-title">Product product</h3>
 
-		<ul>
+		<ul class="product-list">
 			<li>Lightweight, durable canvas sneaker</li>
 			<li>Lightly padded footbed for added comfort</li>
 			<li>Iconic Chuck Taylor ankle patch.</li>

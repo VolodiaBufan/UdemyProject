@@ -1,10 +1,20 @@
+* {
+	font-family: sans-serif;
+}
+
+
+body {
+	color: #444;
+	font-family: sans-serif;	
+}
+
+
 h1,
 h2,
 h3,
 h4,
 p,
 li {
-	font-family: sans-serif;
 	color: #444;
 }
 
@@ -137,4 +147,8 @@ a:active {
 
 footer p {
 	color: green;
+} */
+
+/* nav a:link, nav p {
+	font-size: 18px;
 } */
