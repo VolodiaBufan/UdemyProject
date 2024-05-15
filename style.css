@@ -164,6 +164,13 @@ a:active {
 	font-style: italic;
 }
 
+.related-post {
+	border-bottom: #1098ad 5px solid;
+	border-top: #1098ad 5px solid;
+}
+
+
+
 /* *LVHA */
 
 .post-img {
@@ -267,4 +274,22 @@ nav {
 	clear: both;
 	content: '';
 	display: block;
+}
+
+
+article {
+	/* background-color: green; */
+	width: 825px;
+	float: left;
+}
+
+aside {
+	/* background-color: red; */
+	width: 350px;
+	float: right;
+}
+
+footer {
+	/* background-color: yellow; */
+	clear: both;
 }
