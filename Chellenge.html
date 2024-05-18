@@ -15,6 +15,7 @@
 			margin: 0;
 			font-family: sans-serif;
 			line-height: 1.5;
+			box-sizing: border-box;
 		}
 
 		article {
@@ -25,12 +26,26 @@
 			position: relative;
 		}
 
+		.clearfix::after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+
+		/* 
+		.product-container{
+			background-color: red;
+		} */
 
 		.product-header {
 			text-align: center;
 			font-size: 22px;
 			text-transform: uppercase;
 			padding: 15px 0;
+		}
+
+		.product-img {
+			float: left;
 		}
 
 		.sale {
@@ -47,9 +62,18 @@
 			left: -32px;
 		}
 
+		.container-infornation {
+			padding-left: 40px;
+			float: left;
+			width: 260px;
+			display: block;
+			margin-bottom: 0;
+		}
+
 		.product-price {
 			font-size: 25px;
 			font-weight: bold;
+			float: left;
 		}
 
 		.product-shipping {
@@ -57,6 +81,13 @@
 			font-weight: bold;
 			color: #999;
 			font-size: 12px;
+			margin-top: 8px;
+			margin-bottom: 12px;
+			float: right;
+		}
+
+		.product-description {
+			clear: both;
 			margin-bottom: 20px;
 		}
 
@@ -81,13 +112,22 @@
 
 		.color {
 			display: inline-block;
-			padding: 15px;
+			padding: 10px;
 			background-color: #000;
 			margin-right: 10px;
 		}
 
 		.color:last-child {
 			margin-right: 0;
+		}
+
+		/* Product details content */
+
+		.container-details {
+			float: left;
+			width: 260px;
+			margin-bottom: 0;
+			padding-left: 40px;
 		}
 
 		.product-title {
@@ -125,45 +165,57 @@
 	<article>
 		<h2 class="product-header">Converse Chunk Taylor All Star Low Top</h2>
 
-		<img src="img/challenges.jpg"
-			 alt="Converse All Star"
-			 width="250"
-			 height="250">
+		<div class="product-container clearfix">
 
-		<p class="sale">Sale</p>
+			<img src="img/challenges.jpg"
+				 alt="Converse All Star"
+				 width="250"
+				 height="250"
+				 class="product-img">
 
-		<p class="product-price"><strong>$65.00</strong></p>
+			<p class="sale">Sale</p>
 
-		<p class="product-shipping">Free shipping</p>
+			<div class="container-infornation">
 
-		<p>Ready to dress up, these classic canvas Chucks are an everyday wardrobe staple.</p>
+				<p class="product-price"><strong>$65.00</strong></p>
 
-		<a href="#"
-		   class="product-more-information">More information &rarr;</a>
+				<p class="product-shipping">Free shipping</p>
 
-		<div class="color-block">
-			<div class="color"
-				 style="background-color: black;"></div>
-			<div class="color"
-				 style="background-color: blue;"></div>
-			<div class="color"
-				 style="background-color: red;"></div>
-			<div class="color"
-				 style="background-color: yellow;"></div>
-			<div class="color"
-				 style="background-color: green;"></div>
-			<div class="color"
-				 style="background-color: brown;"></div>
+				<p class="product-description">Ready to dress up, these classic canvas Chucks are an everyday wardrobe
+					staple.</p>
+
+				<a href="#"
+				   class="product-more-information">More information &rarr;</a>
+
+				<div class="color-block">
+					<div class="color"
+						 style="background-color: black;"></div>
+					<div class="color"
+						 style="background-color: blue;"></div>
+					<div class="color"
+						 style="background-color: red;"></div>
+					<div class="color"
+						 style="background-color: yellow;"></div>
+					<div class="color"
+						 style="background-color: green;"></div>
+					<div class="color"
+						 style="background-color: brown;"></div>
+				</div>
+
+			</div>
+
+			<div class="container-details">
+
+				<h3 class="product-title">Product details</h3>
+
+				<ul class="product-list">
+					<li class="product-list-item">Lightweight, durable canvas sneaker</li>
+					<li class="product-list-item">Lightly padded footbed for added comfort</li>
+					<li class="product-list-item">Iconic Chuck Taylor ankle patch.</li>
+				</ul>
+
+			</div>
 		</div>
-
-
-		<h3 class="product-title">Product details</h3>
-
-		<ul class="product-list">
-			<li class="product-list-item">Lightweight, durable canvas sneaker</li>
-			<li class="product-list-item">Lightly padded footbed for added comfort</li>
-			<li class="product-list-item">Iconic Chuck Taylor ankle patch.</li>
-		</ul>
 
 		<button>Add to card</button>
 
